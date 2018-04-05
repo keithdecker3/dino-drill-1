@@ -15,9 +15,9 @@ componentDidMount() {
       return (
         <li key={listing.title}>
           <h4>{listing.title}</h4>
-          <small>{listing.pay}listing.</small>
+          <small>{listing.pay}</small>
           <p>{listing.description}</p>
-          <small></small>
+          <small>{listing.interested.length} dinos are interested in this job</small>
         </li>
       )
     })
